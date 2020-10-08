@@ -3,18 +3,19 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int square(int n);
 
 int main(int argc, char *argv[]) {
-	int n=5;
-	int res;
+
 	
-	res=square(n);
-	printf("%d",res);	
+	printf("get_max : %i\n",get_max(10,20));	
 	
 	return 0;
 }
 
-int square(int n){
-	return(n*n);
+int get_max(int x, int y){
+	
+	if(x > y)
+		return x;
+	else
+		return y;
 }
